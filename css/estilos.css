@@ -6,47 +6,35 @@
 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .titulo-articulo
 {
-    background-color: rgb(255, 230, 240);
+    background-color: rgb(223, 246, 255);
 }
 
-.botones
-{
-    font-size: 30px;
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
-    border-radius: 50px;
-    background-color: rgba(0,0,0,.7);
-    text-align: center;
-    font-weight: bold;
-    position: absolute;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(255,255,255,.6);
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition: all .3s ease;
+.top{
+    width: 50%;
+    padding-left: 10px;
 }
 
-.botones:hover
-{
-    cursor:pointer;
-    transform: scale(   1.2,1.2);
-
+.bot{
+    width: 50%;
+    padding-right: 10px;
 }
 
-.atras
-{
-    left: 2%;
-    top: calc(50% - 70px);
+.page-content{
+    display: flex;
+    flex-direction: column;
 }
 
-.adelante
-{
-    right: 2%;
-    top: calc(50% - 70px);
+.primero{
+    font-size: 25px;
+    border: 0;
 }
 
+.segundo{
+    font-size: 25px;
+    border: 0;
+}
