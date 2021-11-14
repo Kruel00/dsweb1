@@ -6,27 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/site.js"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <script src="js/site.js"></script>
-    <div class="top-banner">
-        <h1>Financiera Chavez</h1>
-    </div>
-    <hr>
-    <div class="top-menu">
-        <a href="">Registrar usuarios</a>
-        <a href="">Logout</a>
-    </div>
+    <header>
+        <div class="top-banner">
+            <h1>Financiera Chavez</h1>
+        </div>
+        <div class="top-menu">
+            <nav>
+                <ul>
+                    <li><a href="vistas/registro_empleado.php">Registrar Empleado</a></li>
+                    <li><a href="vistas/registrar_asesor.php">Registrar Asesor</a></li>
+                    <li><a href="vistas/registrar_cliente.php">Registrar Cliente</a></li>
+                    <li><a href="vistas/pagina_empleado.php">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <hr>
     <div class="page-content">
         <div class="titulo-articulo primero">
-            <h3>¿Qué son las criptomonedas?</h3>
+            <h3>Principales Criptomonedas</h3>
         </div>
         <article class="articulo-cuerpo">
+            <div class="atras botones">
+                &#60
+            </div>
+            <div class="adelante botones">
+                &#62
+            </div>
+            <script>
+                function encimaImagen() {
+                    this.setAttribute("width", 400);
+                    this.setAttribute("hight", 400);
+                    console.log('paso el mouse por encima');
+                }
+
+                function salirImagen() {
+                    this.setAttribute("width", 300);
+                    this.setAttribute("hight", 300);
+                    console.log('paso el mouse por encima');
+                }
+
+            </script>
+
             <div class="imagen-articulo">
-                <img src="img/Crypto/Dogecoin.png" id="imagen" name="carrusel" alt="">
+                <img src="img/Crypto/Dogecoin.png" id="imagen" name="carrusel" onmouseout="salirImagen.call(this)" onmouseover="encimaImagen.call(this)"
+                    alt="">
             </div>
             <div class="texto-articulo top">
                 <p id="texto_top">
