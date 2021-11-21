@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.top-banner{
+    display: flex;
+    width: 99%;
+    height: 70px;
+    justify-content: center;
+    background-color: rgb(171, 234, 250);
+    font-size: 30px;
+}
+
+.top-banner h1{
+    margin-top: 10px;
+}
+
+.body-page{
+    display: flex;
+    flex-direction: row;
+    width: 99%;
+    
+}
+
+.form-label{
+    width: 400px;
+}
+
+
+.area-registros{
+    border: solid 1px rgb(0, 174, 255);
+    margin-top: 20px;
+}
+
+
+.label-area *{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 4px;
+}
+
+.form-area *{
+    margin-top: 3px;
+}
+
+.transaccion-area{
+    display: flex;
+    flex-direction: row;
+}
+
+.form-area #enviar{
+    padding: 5px;
+}
+
+.informacion-divizas{
+
+    margin-left: 50px;
+}
+
+#transac {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#transac td, #transac th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#transac tr:nth-child(even){background-color: #f2f2f2;}
+
+#transac tr:hover {background-color: #ddd;}
+
+
+#transac th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #636464;
+  color: white;
+}

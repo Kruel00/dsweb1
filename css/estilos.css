@@ -132,3 +132,8 @@ header nav ul li a:hover{
     right: 2%;
     top: 50%;
 }
+
+.reg-area{
+    display: flex;
+    flex-direction: row;
+}
