@@ -5,7 +5,7 @@
 
 }
 
-.top-banner{
+.top-banner2{
     display: flex;
     width: 99%;
     height: 70px;
@@ -14,7 +14,7 @@
     font-size: 30px;
 }
 
-.top-banner h1{
+.top-banner2 h1{
     margin-top: 10px;
 }
 

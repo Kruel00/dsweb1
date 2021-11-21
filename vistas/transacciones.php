@@ -12,11 +12,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Financiera Chavez</title>
 </head>
 
 <body>
-    <div class="top-banner">
+<header>
+        <div class="top-banner ">
+            <h1>Financiera Chavez</h1>
+        </div>
+        <div class="top-menu">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../vistas/transacciones.php">Registro de divisas</a></li>
+                    <li><a href="../vistas/registro_usuarios.php">Registro de usuarios</a></li>
+                </ul>
+            </nav>
+        </div>
+        <HR>
+        </HR>
+    </header>
+
+    <div class="top-banner2">
         <h1>Transacciones</h1>
     </div>
 
@@ -31,7 +49,7 @@
             </div>
 
             <div class="form-area">
-                <form name="formu" action="" id="formu" method="POST">
+                <form name="formu" action="transacciones.php" id="formu" method="POST">
                     <div class="form-control">
                         <select name="cripto" id="criptomoneda">
                             <option value="1">BTC</option>
@@ -119,9 +137,9 @@ if (isset($_POST['regTransaccion'])) {
     $consultNewCripto = "insert into transaccion values ($cn,$tt,$cc,$pd,$st,$cm,$ttr);";
     $wrtTrans = sqlsrv_query($con, $consultNewCripto);
     if ($wrtTrans) {
-        echo "<script>location.href='index.php?saveTrans=true';</script>";
+        echo "<script>location.href='transacciones.php?saveTrans=true';</script>";
     } else {
-        echo "<script>location.href='index.php?saveTrans=false';</script>";
+        echo "<script>location.href='transacciones.php?saveTrans=false';</script>";
     }
     echo $tt;
 }

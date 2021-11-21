@@ -1,5 +1,6 @@
 *{
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 .articulo-cuerpo
 {
@@ -70,6 +71,13 @@ hr{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.top-banner{
+    display: flex;
+    flex-direction: row;
+}
+.top-banner img{
+    width: 200px;
+}
 .top-banner h1{
     margin: 0;
     padding: 0;
@@ -136,4 +144,31 @@ header nav ul li a:hover{
 .reg-area{
     display: flex;
     flex-direction: row;
+}
+.reg-area *{
+    padding: 10px;
+    margin: 5px;
+    font-size: 25px;
+}
+
+.label-area *{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.input-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.send-area {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+.send-area input{
+    padding: 30px;
+    width: 10em;
+    
 }

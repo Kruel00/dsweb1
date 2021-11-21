@@ -45,8 +45,8 @@ while ($row = sqlsrv_fetch_array($result)) {
             <td align='center'>$$row[5]</td>
             <td align='center'>$$row[6]</td>
             <td align='center'>$$row[7]</td>
-            <td align='center'><a href='vistas/editTransac.php?editarTransac=$row[0]'>Editar</a></td>
-            <td align='center'><a href='index.php?borrarTransac=$row[0]'>Borrar</a></td>
+            <td align='center'><a href='../vistas/editTransac.php?editarTransac=$row[0]'>Editar</a></td>
+            <td align='center'><a href='../vistas/transacciones.php?borrarTransac=$row[0]'>Borrar</a></td>
             </tr>";
 }
 echo "
