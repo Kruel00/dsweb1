@@ -35,14 +35,6 @@
     margin-top: 20px;
 }
 
-
-.label-area *{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 4px;
-}
-
 .form-area *{
     margin-top: 3px;
 }

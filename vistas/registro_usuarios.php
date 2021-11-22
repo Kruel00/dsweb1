@@ -12,7 +12,8 @@
 
 <body>
     <header>
-        <div class="top-banner">
+    <div class="top-banner">
+            <img src="../img/logo.png" alt="">
             <h1>Financiera Chavez</h1>
         </div>
         <div class="top-menu">

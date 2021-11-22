@@ -48,12 +48,6 @@
     padding-left: 3em;
 }
 
-
-.top-banner{
-    font-size: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif
-}
-
 hr{
     margin: 0;
 }
@@ -74,9 +68,13 @@ hr{
 .top-banner{
     display: flex;
     flex-direction: row;
+    font-size: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
+
 .top-banner img{
     width: 200px;
+    margin-right: 20px;
 }
 .top-banner h1{
     margin: 0;
@@ -145,8 +143,9 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: row;
 }
+
 .reg-area *{
-    padding: 10px;
+    padding: 2px;
     margin: 5px;
     font-size: 25px;
 }
@@ -154,7 +153,10 @@ header nav ul li a:hover{
 .label-area *{
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
+}
+
+.label-area label{
+    margin: 10px;
 }
 
 .input-area{
@@ -165,10 +167,17 @@ header nav ul li a:hover{
 .send-area {
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 20%;
 }
 .send-area input{
-    padding: 30px;
-    width: 10em;
-    
+    padding: 10px;
+}
+
+.buttons-area{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons-area button{
+    padding: 10px;
 }
